@@ -1,0 +1,20 @@
+=== CONSTRUCTOR ===
+(self, conn: collections.abc.Callable[[], typing.Any] | typing.Any | None = None, debug_truncate: bool = True)
+
+=== PUBLIC METHODS ===
+  attribution(self, entity_id=None, process_id=None)
+  close(self) -> None
+  embed_texts(self, texts: str | list[str], *, async_: bool = False) -> Any
+  new_session(self)
+  recall(self, query: str, limit: int | None = None)
+  set_session(self, id)
+
+=== INSTANTIATION TEST ===
+Created OK, type: <class 'memori.Memori'>
+Has .llm: True
+Has .config: True
+  llm type: <class 'memori.LlmRegistry'>
+  llm attrs: ['memori', 'register']
+  register sig: (client=None, openai_chat=None, claude=None, gemini=None, xai=None, chatbedrock=None, chatgooglegenai=None, chatopenai=None, chatvertexai=None)
+  config type: <class 'memori._config.Config'>
+  config attrs: ['api_key', 'augmentation', 'cache', 'cloud', 'debug_truncate', 'embeddings', 'entity_id', 'framework', 'is_test_mode', 'llm', 'platform', 'process_id', 'raise_final_request_attempt', 'recall_embeddings_limit', 'recall_facts_limit', 'recall_relevance_threshold', 'request_backoff_factor', 'request_num_backoff', 'request_secs_timeout', 'reset_cache', 'session_id', 'session_timeout_minutes', 'storage', 'storage_config', 'thread_pool_executor', 'version']

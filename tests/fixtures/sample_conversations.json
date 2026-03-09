@@ -1,0 +1,42 @@
+[
+  {
+    "user_message": "Schedule a team meeting tomorrow at 2pm for 1 hour",
+    "expected_intent": "create",
+    "expected_tasks": [
+      {
+        "title": "Team meeting",
+        "time_expression": "tomorrow at 2pm",
+        "duration_minutes": 60,
+        "domain_name": "Work"
+      }
+    ]
+  },
+  {
+    "user_message": "What do I have on Friday?",
+    "expected_intent": "read",
+    "expected_query_type": "schedule"
+  },
+  {
+    "user_message": "Cancel the doctor appointment",
+    "expected_intent": "delete",
+    "expected_target_ref": "doctor appointment"
+  },
+  {
+    "user_message": "Move gym to 6am",
+    "expected_intent": "update",
+    "expected_target_ref": "gym"
+  },
+  {
+    "user_message": "I need to buy groceries, pick up dry cleaning, and call the dentist today",
+    "expected_intent": "create",
+    "expected_task_count": 3
+  },
+  {
+    "user_message": "Plan my week",
+    "expected_intent": "plan"
+  },
+  {
+    "user_message": "How did today go?",
+    "expected_intent": "reflect"
+  }
+]

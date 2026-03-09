@@ -1,0 +1,64 @@
+[
+  {
+    "title": "Morning standup meeting",
+    "domain_name": "Work",
+    "priority": "high",
+    "scheduled_start": "2025-06-09T09:00:00Z",
+    "duration_minutes": 30,
+    "is_flexible": false
+  },
+  {
+    "title": "Review pull requests",
+    "domain_name": "Work",
+    "priority": "medium",
+    "scheduled_start": "2025-06-09T10:00:00Z",
+    "duration_minutes": 60,
+    "is_flexible": false
+  },
+  {
+    "title": "Gym session",
+    "domain_name": "Health",
+    "priority": "medium",
+    "scheduled_start": "2025-06-09T07:00:00Z",
+    "duration_minutes": 60,
+    "is_flexible": false
+  },
+  {
+    "title": "Grocery shopping",
+    "domain_name": "Errands",
+    "priority": "low",
+    "is_flexible": true,
+    "duration_minutes": 45
+  },
+  {
+    "title": "Read chapter 5",
+    "domain_name": "Learning",
+    "priority": "low",
+    "scheduled_start": "2025-06-09T20:00:00Z",
+    "duration_minutes": 45,
+    "is_flexible": true
+  },
+  {
+    "title": "Sprint planning",
+    "domain_name": "Work",
+    "priority": "high",
+    "scheduled_start": "2025-06-09T14:00:00Z",
+    "duration_minutes": 90,
+    "is_flexible": false
+  },
+  {
+    "title": "Doctor appointment",
+    "domain_name": "Health",
+    "priority": "high",
+    "scheduled_start": "2025-06-10T11:00:00Z",
+    "duration_minutes": 60,
+    "is_flexible": false
+  },
+  {
+    "title": "Pay electricity bill",
+    "domain_name": "Finance",
+    "priority": "medium",
+    "is_flexible": true,
+    "duration_minutes": 15
+  }
+]
