@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: memora-backend
+    env: docker
+    plan: free
+    autoDeploy: true
+    healthCheckPath: /health
+    envVars:
+      - key: DB_PATH
+        value: /tmp/memora.db
+      - key: OLLAMA_BASE_URL
+        sync: false
+      - key: OLLAMA_API_KEY
+        sync: false
+      - key: OLLAMA_MODEL
+        value: gpt-oss:20b
+      - key: NOTIFICATION_SERVICE_URL
+        sync: false
+      - key: NOTIFICATION_API_KEY
+        sync: false
+      - key: CORS_ORIGINS
+        value: '["http://localhost:3000"]'

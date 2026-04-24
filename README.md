@@ -33,3 +33,19 @@ make migrate    # Run alembic migrations
 ## Environment Variables
 
 Copy `.env.example` to `.env` and fill in your values.
+
+## Deploy on Render
+
+This repo now includes `Dockerfile` and `render.yaml` for Render deployment.
+
+1. Push this repository to GitHub.
+2. In Render, create a new Blueprint and connect this repo.
+3. Render reads `render.yaml` and provisions the `memora-backend` web service.
+4. Set secret values in Render dashboard for:
+	- `OLLAMA_BASE_URL`
+	- `OLLAMA_API_KEY`
+	- `NOTIFICATION_SERVICE_URL`
+	- `NOTIFICATION_API_KEY`
+5. Deploy and verify health endpoint at `/health`.
+
+Note: `DB_PATH` defaults to `/tmp/memora.db` in `render.yaml`, which is ephemeral and suitable for demos.
