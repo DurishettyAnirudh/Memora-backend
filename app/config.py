@@ -1,5 +1,6 @@
 """Application configuration loaded from environment variables."""
 
+import os
 from pathlib import Path
 
 from pydantic_settings import BaseSettings
@@ -7,7 +8,7 @@ from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
     # Database
-    DB_PATH: str = "memora.db"
+    DB_PATH: str = "/tmp/memora.db" if os.getenv("VERCEL") else "memora.db"
 
     # Ollama / LLM
     OLLAMA_BASE_URL: str = "https://ollama.com/v1/"
